@@ -2,6 +2,7 @@
 
 import React, {useState, useContext} from 'react';
 import UserContext from "../context/UserContext";
+import Form from './form';
 
 function Login() {
 
@@ -18,24 +19,13 @@ function Login() {
     setUser({username, password})
   }
   return (
-    <div>
-      <h2> Login </h2>
-      <input type="text"
-
-      /* Controlling/Govern the state */
-      value={username}
-
-      /* if something change in the field than the state will changes as well */
-      onChange={(e) => setUsername(e.target.value) }
-
-      placeholder="username" />
-      {"  "}
-      <input type="text"
-      value={password}
-      onChange={(e) => setPassword(e.target.value)}
-      placeholder="password" />
-      <button onClick={handleSubmit}>Submit</button>
-    </div>
+    <Form
+    username={username} 
+    setUsername={setUsername}
+    password={password}
+    setPassword={setPassword}
+    handleSubmit={handleSubmit} />
+    
   )
 }
 
