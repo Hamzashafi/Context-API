@@ -1,0 +1,11 @@
+Text File
+
+ Hook file -> Make another file for local storage so that we can use anywhere in the project. Make a custom hook
+
+Layout file, routes secured so we make these files. Unknown person shouldn't allowed to use this routes
+
+
+Use navigate, we use this hook from react router, to move to some back page, 
+local storage got cleared when someone else got into our page or new user comes in.
+
+Read Ternary operator in react
