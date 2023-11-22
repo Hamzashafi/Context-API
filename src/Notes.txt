@@ -1,6 +1,4 @@
-Text File
-
- Hook file -> Make another file for local storage so that we can use anywhere in the project. Make a custom hook
+Hook file -> Make another file for local storage so that we can use anywhere in the project. Make a custom hook
 
 Layout file, routes secured so we make these files. Unknown person shouldn't allowed to use this routes
 
