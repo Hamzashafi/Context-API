@@ -8,10 +8,14 @@ const Auth = () => {
 
 	// The component will only re-render if 'auth' changes.
 	const component = useMemo(() => {
-		return auth ? <Navigate to="/home" replace /> : <Login />;
-	}, [auth]);
+		
+		/* Ternary Operator*/
+		
+		return auth ? <Navigate to="/home" replace /> : <Login />;  
+	}
+	,[auth]);
 
 	return component;
 };
 
-export default Auth;
+export default Auth;

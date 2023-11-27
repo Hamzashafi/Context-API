@@ -1,6 +1,6 @@
 /* taking data from user from this jsx file */
 
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import UserContext from "../context/UserContext";
 
 function Profile() {
@@ -15,8 +15,16 @@ function Profile() {
 
     return <div> Welcome {user.username} </div>
   }
+                /*
+                useEffect(() =>{
+                  const userName = window.localStorage.getItem('UserName');
+                  updatePassword(JSON.parse(userName));
+                }, [])
 
-
+                useEffect(() => {
+                  window.localStorage.setItem('UserName', JSON.stringify(userName))
+                });
+                */
 }
 
 export default Profile

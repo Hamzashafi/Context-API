@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Login from '../components/Login';
 import Home from '../pages/Home/Home';
 import Private from '../Layouts/private';
-import Auth from '../Layouts/auth';
+import Auth from '../Layouts/Auth'; 
 import ErrorPage from '../pages/notFound';
 
 
