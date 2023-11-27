@@ -6,6 +6,7 @@ import UserContext from "../context/UserContext";
 function Profile() {
 
    const {user} = useContext(UserContext) ;
+   console.log("username");
 
   if (!user){
 

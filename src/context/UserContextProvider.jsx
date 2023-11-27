@@ -6,7 +6,8 @@ import UserContext from "./UserContext";
 const UserContextProvider = ({children}) => {
 
     /* API Calling/Access */
-    const[user, setUser] = React.useState(null)  
+    const[user, setUser] = React.useState( localStorage.getItem("username") || null);
+    console.log(user); 
     
     return(
 

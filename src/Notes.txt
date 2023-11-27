@@ -7,3 +7,11 @@ Use navigate, we use this hook from react router, to move to some back page,
 local storage got cleared when someone else got into our page or new user comes in.
 
 Read Ternary operator in react
+
+/* Code for using local storage
+const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("user")) || null
+  );
+
+  localStorage.setItem("user")
+  */
